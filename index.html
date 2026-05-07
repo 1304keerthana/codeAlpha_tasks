@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Letters Background -->
+
+    <div class="floating-letters">
+        <span>அ</span>
+        <span>A</span>
+        <span>क</span>
+        <span>あ</span>
+        <span>한</span>
+        <span>語</span>
+        <span>B</span>
+        <span>இ</span>
+        <span>न</span>
+        <span>Z</span>
+    </div>
+
+    <div class="container">
+
+        <h1>🌍 Language Translation Tool</h1>
+
+        <textarea
+            id="inputText"
+            placeholder="Enter text here...">
+        </textarea>
+
+        <div class="language-box">
+
+            <select id="sourceLang">
+
+                <option value="en">English</option>
+                <option value="ta">Tamil</option>
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+
+            </select>
+
+            <select id="targetLang">
+
+                <option value="ta">Tamil</option>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+
+            </select>
+
+        </div>
+
+        <button onclick="translateText()">
+            Translate
+        </button>
+
+        <h2>Translated Text:</h2>
+
+        <div id="outputText"></div>
+
+        <button onclick="copyText()">
+            Copy Text
+        </button>
+
+        <button onclick="speakText()">
+            Speak
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
